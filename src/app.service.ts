@@ -34,13 +34,8 @@ export class AppService {
         () => this.prisma.pingCheck('prisma', this.prismaService),
         () =>
           this.disk.checkStorage('storage', {
-<<<<<<< HEAD
             path: `C:/Program Files/PostgreSQL/data`,
             thresholdPercent: 1.0,
-=======
-            path: `/var/lib/postgresql/16/main`,
-            thresholdPercent: 0.5,
->>>>>>> 915ef108ed76b27a721505192b85b944bfee01e0
           }),
         () => this.memory.checkHeap('memory_heap', 1024 * 1024 * 1024),
       ]);
@@ -60,8 +55,4 @@ export class AppService {
   runApplication() {
     return this.logger.log('Service is now up and running! 🌱');
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 915ef108ed76b27a721505192b85b944bfee01e0
