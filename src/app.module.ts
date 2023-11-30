@@ -32,7 +32,7 @@ import { PrismaService } from './database/PrismaService';
       host: 'localhost',
       port: 5432,
       username: 'postgres',
-      password: 'senai',
+      password: 'postgres',
       database: 'GreenLearnDB',
       autoLoadEntities: true,
       synchronize: true,
